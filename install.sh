@@ -1,14 +1,5 @@
 #!/bin/bash
 
-#papers=''
-
-read -p 'Do you want to install extra wallpapers? [Y/n]: ' walls
-if [ $walls == 'Y' ] || [ $walls == 'y' ] || [ $walls == '' ]
-    then git clone https://github.com/D3Ext/aesthetic-wallpapers.git && papers='y'
-    else papers='n'
-fi
-
-echo $papers
 
 git clone https://github.com/Alexays/Waybar
 git clone https://aur.archlinux.org/sddm-sugar-dark.git
@@ -49,15 +40,11 @@ makepkg pkgbuild -srci --noconfirm
 cd
 
 mkdir wallpapers
-mkdir wallpapers/active
-#sudo mkdir /usr/local/etc/xdg/
-#sudo mkdir /usr/local/etc/xdg/waybar
 cd
 
 #set up configs
 sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
 sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/
-sudo cp ~/archpkgs/wall2.png ~/wallpapers/
 sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
 sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
@@ -72,9 +59,6 @@ sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
 sudo cp ~/archpkgs/startup.sh ~/.config/hypr/
 sudo cp ~/archpkgs/paper.sh ~/
 
-if [ $papers == 'y' ]
-    then sudo mv ~/aesthetic-wallpapers/images/* ~/wallpapers/
-fi
 
 #add startup script
 cd
