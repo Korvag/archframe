@@ -43,21 +43,21 @@ mkdir wallpapers
 cd
 
 #set up configs
-sudo cp ~/archpkgs/tree.jpg /usr/share/sddm/themes/sugar-dark/Backgrounds/
-sudo cp ~/archpkgs/tree.jpg ~/wallpapers/active/
-sudo cp ~/archpkgs/theme.conf /usr/share/sddm/themes/sugar-candy/
-sudo cp ~/archpkgs/default.conf /usr/lib/sddm/sddm.conf.d/
-sudo cp ~/archpkgs/hyprpaper.conf ~/.config/hypr/
-sudo cp ~/archpkgs/hyprland.conf ~/.config/hypr/
-sudo cp ~/archpkgs/btop.sh ~/.config/hypr
-sudo cp ~/archpkgs/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
+sudo cp ~/archframe/lotusflower.png /usr/share/sddm/themes/sugar-dark/Backgrounds/
+sudo cp ~/archframe/lotusflower.png ~/wallpapers/
+sudo cp ~/archframe/theme.conf /usr/share/sddm/themes/sugar-candy/
+sudo cp ~/archframe/default.conf /usr/lib/sddm/sddm.conf.d/
+sudo cp ~/archframe/hyprpaper.conf ~/.config/hypr/
+sudo cp ~/archframe/hyprland.conf ~/.config/hypr/
+sudo cp ~/archframe/btop.sh ~/.config/hypr
+sudo cp ~/archframe/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
 sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
-sudo cp -f ~/archpkgs/style.css /usr/local/etc/xdg/waybar/style.css
-sudo cp ~/archpkgs/.bashrc ~/
-sudo cp ~/archpkgs/.nanorc ~/
-sudo cp ~/archpkgs/kitty.conf ~/.config/kitty/
-sudo cp ~/archpkgs/startup.sh ~/.config/hypr/
-sudo cp ~/archpkgs/paper.sh ~/
+sudo cp -f ~/archframe/style.css /usr/local/etc/xdg/waybar/style.css
+sudo cp ~/archframe/.bashrc ~/
+sudo cp ~/archframe/.nanorc ~/
+sudo cp ~/archframe/kitty.conf ~/.config/kitty/
+sudo cp ~/archframe/startup.sh ~/.config/hypr/
+sudo cp ~/archframe/paper.sh ~/
 
 
 #add startup script
