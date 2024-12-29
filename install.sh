@@ -45,7 +45,7 @@ cd
 #set up configs
 sudo cp ~/archframe/lotusflower.png /usr/share/sddm/themes/sugar-dark/Backgrounds/
 sudo cp ~/archframe/lotusflower.png ~/wallpapers/
-sudo cp ~/archframe/theme.conf /usr/share/sddm/themes/sugar-candy/
+sudo cp ~/archframe/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archframe/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archframe/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archframe/hyprland.conf ~/.config/hypr/
