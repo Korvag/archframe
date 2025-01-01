@@ -11,7 +11,7 @@ sudo pacman -S meson ninja cmake scdoc pkgconf --noconfirm
 
 
 #dependencies
-sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog libgtk-3-dev gobject-introspection libgirepository1.0-dev \
+sudo pacman -S jsoncpp libsigc++ fmt wayland wayland-protocols chrono-date spdlog gtk3 gobject-introspection libgirepository \
     libpulse libappindicator-gtk3 libdbusmenu-gtk3 libmpdclient libevdev upower pango cairo file libglvnd libjpeg-turbo libwebp hyprlang gcc pamixer \
     libnl libsndio xkbregistry --noconfirm
 
@@ -40,7 +40,10 @@ makepkg pkgbuild -srci --noconfirm
 cd
 
 mkdir wallpapers
+sudo mkdir /usr/share/sddm/themes/sugar-dark/Backgrounds
 cd
+
+yay -S uwsm --noconfirm
 
 #set up configs
 sudo cp ~/archframe/lotusflower.png /usr/share/sddm/themes/sugar-dark/Backgrounds/
@@ -49,7 +52,7 @@ sudo cp ~/archframe/theme.conf /usr/share/sddm/themes/sugar-dark/
 sudo cp ~/archframe/default.conf /usr/lib/sddm/sddm.conf.d/
 sudo cp ~/archframe/hyprpaper.conf ~/.config/hypr/
 sudo cp ~/archframe/hyprland.conf ~/.config/hypr/
-sudo cp ~/archframe/btop.sh ~/.config/hypr
+sudo cp ~/archframe/btop.sh ~/.config/hypr/
 sudo cp ~/archframe/waybar.conf /usr/local/etc/xdg/waybar/waybar.conf
 sudo mv /usr/local/etc/xdg/waybar/waybar.conf /usr/local/etc/xdg/waybar/config
 sudo cp -f ~/archframe/style.css /usr/local/etc/xdg/waybar/style.css
@@ -64,7 +67,6 @@ sudo cp ~/archframe/paper.sh ~/
 cd
 sudo chmod +x ~/.config/hypr/btop.sh
 
-rm -rf ~/aesthetic-wallpapers
 rm -rf ~/sddm-sugar-dark
 rm -rf ~/yay-bin
 sudo rm -rf ~/Waybar
