@@ -41,6 +41,7 @@ cd
 
 mkdir wallpapers
 sudo mkdir /usr/share/sddm/themes/sugar-dark/Backgrounds
+sudo mkdir -p /usr/local/share/fonts/ttf/
 cd
 
 yay -S uwsm --noconfirm
@@ -61,6 +62,7 @@ sudo cp ~/archframe/.nanorc ~/
 sudo cp ~/archframe/kitty.conf ~/.config/kitty/
 sudo cp ~/archframe/startup.sh ~/.config/hypr/
 sudo cp ~/archframe/paper.sh ~/
+sudo cp ~/archframe/WarframeFanFont_b1.ttf /usr/local/share/fonts/ttf/
 
 
 #add startup script
